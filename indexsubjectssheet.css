@@ -1,0 +1,149 @@
+body {
+  background-image: url("images/library2blurred.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* transition: 0.2s; */
+}
+
+.WelcomeMsgParent {
+  text-align: center;
+}
+.WelcomeMsgParent span {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: rgb(207, 134, 24) dotted;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.WelcomeMsgParent h1 {
+  font-style: oblique;
+  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: lightsalmon;
+}
+
+.WelcomeMsgParent h2 {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  color: rgb(211, 182, 51);
+}
+
+.SlideshowArrows {
+  font-size: 45px;
+  background-color: rgba(0, 0, 0, 0);
+  /* transition: 0.3s; */
+}
+
+#RightArrow:hover {
+
+  color: white;
+}
+
+
+#LeftArrow:hover {
+
+  color: white;
+
+}
+
+
+#ArrowContainer {
+  margin: 10px;
+
+}
+
+#RightArrow {
+  margin-left: 100px;
+  transition: 0.5s;
+}
+
+#LeftArrow {
+  margin-right: 100px;
+  transition: 0.5s;
+}
+
+#SubjectImagesParent {
+  text-align: center;
+}
+
+#SubjectImagesParent span {
+  display: inline-block;
+  text-align: center;
+}
+
+.SubjectImages {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #ccc;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  transition-duration: 0.3s;
+  /* transform: translateX(-800px); */
+}
+
+figcaption {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.SubjectImages:hover {
+  border: 5px solid #b6603e;
+}
+.SubjectImages {
+  text-align: center;
+}
+
+/* START OF AMR:SUBJECT Q&A PAGES */
+/* In order for slideshow to work,  Spans must be hidden initially */
+.SubjectClass {
+  transition: 0s;
+  visibility: hidden;
+}
+
+/* Clear floats after  peopleRev*/
+.SubjectClass::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.SubjectClass img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.SubjectClass span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the peopleRev */
+@media (max-width: 500px) {
+  .SubjectClass {
+    text-align: center;
+  }
+
+  .SubjectClass img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}

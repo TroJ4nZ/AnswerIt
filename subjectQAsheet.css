@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: 0.2s;
+  }
+
+#WelcMessageContainer {
+    text-align: center;
+}
+
+.Subject {
+    border: 2px solid #ccc;
+    /* color of background border of the question */
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+
+
+
+/* Clear floats after  peopleRev*/
+.Subject::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.Subject img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.Subject span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the peopleRev */
+@media (max-width: 500px) {
+    .Subject {
+        text-align: center;
+    }
+
+    .Subject img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}

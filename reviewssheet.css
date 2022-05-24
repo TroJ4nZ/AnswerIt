@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: 0.2s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+
+
+#rev {
+  text-align: center;
+}
+
+.peopleRev {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.peopleRev::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.peopleRev img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.peopleRev span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .peopleRev {
+    text-align: center;
+  }
+
+  .peopleRev img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}

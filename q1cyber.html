@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="indexsheet.css">
+        <link rel="stylesheet" href="headersheet.css">
+        <link rel="stylesheet" href="footersheet.css">
+        <link rel="stylesheet" href="registersheet.css">
+        <script src=darkmode.js></script>
+        <title>
+            Question 1 Network and CyberSecurity
+        </title>
+        <style>
+            #q1c {
+                text-align: center;
+            }
+
+            .QA {
+                border: 2px solid #ccc;
+                background-color: #eee;
+                border-radius: 5px;
+                padding: 16px;
+                margin: 16px 0;
+            }
+
+            /* Clear floats after  peopleRev*/
+            .QA::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+            .QA img {
+                float: left;
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+
+            /* Increase the font-size of a span element */
+            .QA span {
+                font-size: 20px;
+                margin-right: 15px;
+            }
+
+            /* Add media queries for responsiveness. This will center both the text and the image inside the peopleRev */
+            @media (max-width: 500px) {
+                .QA {
+                    text-align: center;
+                }
+
+                .QA img {
+                    margin: auto;
+                    float: none;
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+
+<body>
+    <header class="mainheader">
+        <div>
+            <a id=HomeBtnParent href="index.html">
+                <img id=homebtn src="images/home.png">
+            </a>
+
+
+            <a href=index.html>
+                <img id="headerimg" src="images/logo2.png" alt="Company Logo" width=800x; height=250px; />
+            </a>
+        </div>
+
+        <form id="RegisterLoginBtns">
+            <button class="SigningButton" type="button" onclick="window.location.href='register.html';">
+                Register
+            </button>
+            <button class="SigningButton" type="button" onclick="window.location.href='login.html';">
+                Login
+            </button>
+        </form>
+    </header>
+    <div id="q1c">
+        <h1 class="welcomemsg">Network and Cybersecurity Subject</h1>
+        <p style="width:100vw;"></p>
+    </div>
+    </div>
+    <div class="QA">
+        <img src="images/q1.jpg" alt="question 1" style="width:90px">
+        <p><span><mark>Question 1</mark></span></p>
+        <p>
+            How to ping on www.google.com?
+
+        </p>
+
+    </div>
+    <div class="QA">
+        <img src="images/wrong.jpg" alt="wrong logo" style="width:90px">
+        <p>Answer 1</p>
+        <p>
+            ping 127.0.0.1
+        </p>
+    </div>
+    <div class="QA">
+        <img src="images/right.png" alt="right logo" style="width:90px">
+        <p><span><mark>Answer 2</mark></span></p>
+        <p>
+            ping www.google.com
+        </p>
+    </div>
+    <div class="footercontainer">
+        <aside style="text-align: right; padding: 0px; margin: 0px;">
+            <input class=darkmodebtn type="image" src="images/darkmode.png" onclick="toggleDarkModeQA()">
+        </aside>
+
+        <div class="MainFooterParent">
+            <footer id=mainfooter>
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="mailto:a.m.mohamed31@student.aast.edu">Contact Us</a></li>
+                </ul>
+                <p id=FooterRights><em>AnswerIt!</em> All rights reserved.</p>
+
+            </footer>
+
+    </div>
+</body>
+
+</html>

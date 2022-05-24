@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: 0.2s;
+}
+
+.MainFooterParent {
+  margin-top: 0px;
+  background-color: rgb(39, 39, 39);
+  padding: 5px 0px 5px 0px;
+  font-size: 18px;
+  position: relative;
+  top: 10vh;
+  width: 100%;
+}
+
+.MainFooterParent * {
+    padding-left: 5px;
+}
+
+#FooterRights{
+    position: absolute;
+    left: 85vw;
+    bottom: 15px;
+    color: green;
+}
+
+/*- child selector for all links inside the footer, faster than descendant. ->*/
+#mainfooter a:link {
+    color: goldenrod;
+  }
+  #mainfooter a:visited {
+    color: green;
+  }
+  
+

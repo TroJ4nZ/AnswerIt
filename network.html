@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="indexsheet.css" />
+        <link rel="stylesheet" href="headersheet.css">
+        <link rel="stylesheet" href="footersheet.css">
+        <link rel="stylesheet" href="subjectQAsheet.css">
+        <link rel="stylesheet" href="sidenavsheet.css">
+        <script src="sidenav.js"></script>
+        <script src=darkmode.js></script>
+        <title>
+            Network and Cybersecurity
+        </title>
+
+    </head>
+
+<body>
+    <div id="PageBodyContent">
+        <header class="mainheader">
+
+            <span id=MenuIcon src="./images/menu.png" width="30px" onclick="openMenu();">&#9776;</span>
+            <div id="sideMenu">
+                <ul>
+                    <li><a href="#" class="closeBtn" onclick="closeMenu();">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <details id=SubjectsDropDownDetails>
+                            <summary>Subjects</summary>
+                            <p><a href="math.html">Math</a></p>
+                            <p><a href="bio.html">Biology</a></p>
+                            <p><a href="cs.html">Computer Science</a></p>
+                            <p><a href="network.html">Network</a></p>
+                        </details>
+
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <a id=HomeBtnParent href="index.html">
+                <img id=homebtn src="images/home.png">
+            </a>
+
+
+            <a id="headerImgParent" href=index.html>
+                <img id="headerimg" src="images/logo2.png" alt="Company Logo" />
+            </a>
+
+
+            <form id="RegisterLoginBtns">
+                <button class="SigningButton" type="button" onclick="window.location.href='register.html';">
+                    Register
+                </button>
+                <button class="SigningButton" type="button" onclick="window.location.href='login.html';">
+                    Login
+                </button>
+            </form>
+        </header>
+
+
+        <main class=maincontainer>
+            <div id="WelcMessageContainer">
+                <h1 class="welcomemsg">Network and Cybersecurity Subject</h1>
+                <p style="width:100vw;"></p>
+            </div>
+
+            <div class="Subject">
+                <img src="images/q1.jpg" alt="question 1" style="width:90px">
+                <p><span><a href="q1cyber.html" target="_self">Question 1</a></span></p>
+                <p>
+                    How to ping on www.google.com?
+                </p>
+
+            </div>
+            <div class="Subject">
+                <img src="images/q2.png" alt="question 2" style="width:90px">
+                <p><span><a href="q2cyber.html" target="_self">Question 2</a></span></p>
+                <p>
+                    What is the IP address?
+                </p>
+            </div>
+            <div class="Subject">
+                <img src="images/q3.png" alt="question 3" style="width:90px">
+                <p><span><a href="q3cyber.html" target="_self">Question 3</a></span></p>
+                <p>
+                    What is the the router domain?
+                </p>
+            </div>
+        </main>
+        <aside style="text-align: right; padding: 0px; margin: 0px;">
+            <input class=darkmodebtn type="image" src="images/darkmode.png" onclick="toggleDarkModeSubject()">
+        </aside>
+
+
+
+        <div class="MainFooterParent">
+            <footer id=mainfooter>
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="mailto:a.m.mohamed31@student.aast.edu">Contact Us</a></li>
+                </ul>
+                <p id=FooterRights><em>AnswerIt!</em> All rights reserved.</p>
+
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="indexsheet.css" />
+  <link rel="stylesheet" href="headersheet.css">
+  <link rel="stylesheet" href="footersheet.css">
+  <link rel="stylesheet" href="aboutussheet.css">
+  <link rel="stylesheet" href="sidenavsheet.css">
+  <script src="sidenav.js"></script>
+  <script src=darkmode.js></script>
+  <title>About Us</title>
+</head>
+
+<body>
+
+
+
+
+
+  <div id="PageBodyContent">
+    <header class="mainheader">
+
+      <span id=MenuIcon src="./images/menu.png" width="30px" onclick="openMenu();">&#9776;</span>
+      <div id="sideMenu">
+        <ul>
+          <li><a href="#" class="closeBtn" onclick="closeMenu();">&times;</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <details id=SubjectsDropDownDetails>
+              <summary>Subjects</summary>
+              <p><a href="math.html">Math</a></p>
+              <p><a href="bio.html">Biology</a></p>
+              <p><a href="cs.html">Computer Science</a></p>
+              <p><a href="network.html">Network</a></p>
+            </details>
+
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+
+
+
+
+      <a id=HomeBtnParent href="index.html">
+        <img id=homebtn src="images/home.png">
+      </a>
+
+
+      <a id="headerImgParent" href=index.html>
+        <img id="headerimg" src="images/logo2.png" alt="Company Logo" />
+      </a>
+
+
+      <form id="RegisterLoginBtns">
+        <button class="SigningButton" type="button" onclick="window.location.href='register.html';">
+          Register
+        </button>
+        <button class="SigningButton" type="button" onclick="window.location.href='login.html';">
+          Login
+        </button>
+      </form>
+    </header>
+
+
+  <main class="maincontainer">
+    <h1 class="welcomemsg">About Us</h1>
+    <p style="width:100vw;"></p>
+    <div id="faqdiv">
+      <ul class="unorderedlist">
+        <li><b>Who Are We?</b></li>
+        <p>
+          We are a group of talented and inspirational academic tutors and we
+          want to share our experience and knowledge to everyone.
+        </p>
+        <li>
+          <b>Our goal from this site </b></li>
+          <p>Our main goal whether you are a student or not is to make a site
+          that helps and facilitates your educational life for you by<br />
+          answering the most number of questions we can.</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <aside style="text-align: right; padding: 0px; margin: 5px;">
+    <input class=darkmodebtn type="image" src="images/darkmode.png" onclick="toggleDarkMode()">
+  </aside>
+
+
+  <div class="MainFooterParent">
+    <footer id=mainfooter>
+      <ul>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="mailto:ihackprojectsmm@gmail.com">Contact Us</a></li>
+      </ul>
+      <p id=FooterRights><em>AnswerIt!</em> All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

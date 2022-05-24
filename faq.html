@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="indexsheet.css" />
+  <link rel="stylesheet" href="headersheet.css">
+  <link rel="stylesheet" href="footersheet.css">
+  <link rel="stylesheet" href="faqsheet.css">
+  <link rel="stylesheet" href="sidenavsheet.css">
+  <script src="sidenav.js"></script>
+  <script src=darkmode.js></script>
+  <title>AnswerIt! FAQ</title>
+
+</head>
+
+<body>
+  <div id="PageBodyContent">
+    <header class="mainheader">
+
+      <span id=MenuIcon src="./images/menu.png" width="30px" onclick="openMenu();">&#9776;</span>
+      <div id="sideMenu">
+        <ul>
+          <li><a href="#" class="closeBtn" onclick="closeMenu();">&times;</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <details id=SubjectsDropDownDetails>
+              <summary>Subjects</summary>
+              <p><a href="math.html">Math</a></p>
+              <p><a href="bio.html">Biology</a></p>
+              <p><a href="cs.html">Computer Science</a></p>
+              <p><a href="network.html">Network</a></p>
+            </details>
+
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+
+
+
+
+      <a id=HomeBtnParent href="index.html">
+        <img id=homebtn src="images/home.png">
+      </a>
+
+
+      <a id="headerImgParent" href=index.html>
+        <img id="headerimg" src="images/logo2.png" alt="Company Logo" />
+      </a>
+
+
+      <form id="RegisterLoginBtns">
+        <button class="SigningButton" type="button" onclick="window.location.href='register.html';">
+          Register
+        </button>
+        <button class="SigningButton" type="button" onclick="window.location.href='login.html';">
+          Login
+        </button>
+      </form>
+    </header>
+
+
+  <main class="maincontainer">
+    <h1 class="welcomemsg">FAQ</h1>
+    <p style="width:100vw;"></p>
+    <div id="faqdiv">
+      <ul class="unorderedlist">
+        <li><b> Getting started</b>
+        <p>
+          This site is meant to help you get some answers of the questions
+          regarding the specific topic you are searching for whether it is a
+          commonly asked question or it is your question. But first you have to
+          register to be able to view the answers. We will be covering as much
+          topics as we can and answering the most commonly asked questions in each
+          topic to be able to facilitate your work for you.
+        </p>
+      </li>
+        <li>
+          <b> Register/Login</b>
+          <p>
+            To register you have to fill the required fields to be able to use the
+            site's features.
+          </p>
+        </li>
+        <li>
+          <b> Why subscribing?</b>
+          <p>
+            In order to view the answers for the questions you are looking for or
+            ask one of your question you have to choose the bundle that suits you
+            the most from the list of bundles available.
+          </p>
+        </li>
+        <li>
+          <b>The payment method</b>
+          <p>
+            We provide different payment methods for you to choose the one that
+            suits you the most
+          </p>
+          <ul>
+            <li class=innerLI>Paypal</li>
+            <li class=innerLI>Amazon Pay</li>
+            <li class=innerLI>Visa Checkout</li>
+          </ul>
+          <p><em><u>It is not about the money, it is about sending a message</em></u></p>
+
+        </li>
+        <li>
+          <b>Refunds</b>
+          <ul>
+            <li class=innerLI>
+              
+              <p>
+                <b>Paypal: </b>
+                If you made the purchase with funds from both your credit card and
+                your PayPal balance, the refund would be issued to both methods.
+                The amount you paid with your card is refunded to your card, and
+                the remaining amount is sent to your PayPal balance.
+              </p>
+            </li>
+            <li class=innerLI>
+              
+              <p><b>Amazon Pay: </b>The check will be refunded in the matter of <b>2 hours</b></p>
+            </li>
+            <li class=innerLI>
+              
+              <p>
+                <b>Visa: </b>
+                The check will be refunded to your account within
+                <b>2 to 4 Business days</b>
+              </p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <b>Support</b>
+          <p>
+            If there is any problem you are facing you can contact our support:
+          </p>
+          <ul>
+            <li class=innerLI>
+              <a href="mailto:a.m.mohamed31@student.aast.edu?subject=HELP!!!!!!!!!">Support Email</a>
+            </li>
+            <li class=innerLI>011********</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <aside style="text-align: right; padding: 0px; margin: 5px;">
+    <input class=darkmodebtn type="image" src="images/darkmode.png" onclick="toggleDarkMode()">
+  </aside>
+
+  <div class="MainFooterParent">
+    <footer id=mainfooter>
+      <ul>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="mailto:ihackprojectsmm@gmail.com">Contact Us</a></li>
+      </ul>
+      <p id=FooterRights><em>AnswerIt!</em> All rights reserved.</p>
+    </footer>
+  </div>
+  </footer>
+</body>

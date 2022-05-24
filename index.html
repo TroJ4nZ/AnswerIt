@@ -1,0 +1,187 @@
+<!-- 
+1- index/hompeage
+2- about us
+3- FAQ/Pricing  > scheme: subscription 10 Questions/month - unlimited checking answers
+                > scheme: no access
+                > login/register
+                > how to get started
+                > Refunds?
+                > Support
+                > Payment
+4- testomnials
+5- login
+6- register
+
+
+========
+
+7- Math
+8- Biology
+9- Computer Science/Programming
+10 - Network/Cybersecurity
+
+==============
+#forum threads
+#search engine
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="indexsheet.css">
+  <link rel="stylesheet" href="headersheet.css">
+  <link rel="stylesheet" href="indexsubjectssheet.css">
+  <link rel="stylesheet" href="footersheet.css">
+  <link rel="stylesheet" href="sidenavsheet.css">
+  <link rel="stylesheet" href="slideshowsheet.css">
+  
+  <script src="slideshow.js"></script>
+  <script src="sidenav.js"></script>
+  <script src="darkmode.js"></script>
+  <!-- <script>
+    var isAdmin = false; // global variable shared across all nextly linked js (mainadminscript.js is the concern here)
+  </script> -->
+  <script src=validation.js></script>
+  <script src=admin.js></script>
+
+  <title>AnswerIt!</title>
+
+</head>
+
+<body>
+
+
+
+
+  <div id="PageBodyContent">
+    <header class="mainheader">
+
+      <span id=MenuIcon src="./images/menu.png" width="30px" onclick="openMenu();">&#9776;</span>
+      <div id="sideMenu">
+        <ul>
+          <li><a href="#" class="closeBtn" onclick="closeMenu();">&times;</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <details id=SubjectsDropDownDetails>
+              <summary>Subjects</summary>
+              <p><a href="math.html">Math</a></p>
+              <p><a href="bio.html">Biology</a></p>
+              <p><a href="cs.html">Computer Science</a></p>
+              <p><a href="network.html">Network</a></p>
+            </details>
+
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+
+
+
+
+      <a id=HomeBtnParent href="index.html">
+        <img id=homebtn src="images/home.png">
+      </a>
+
+
+      <a id="headerImgParent" href=index.html>
+        <img id="headerimg" src="images/logo2.png" alt="Company Logo" />
+      </a>
+
+
+      <form id="RegisterLoginBtns">
+        <button class="SigningButton" type="button" onclick="window.location.href='register.html';">
+          Register
+        </button>
+        <button class="SigningButton" type="button" onclick="window.location.href='login.html';">
+          Login
+        </button>
+      </form>
+    </header>
+
+
+    <main class="maincontainer">
+      <div class=WelcomeMsgParent>
+        <span>
+          <h1> Welcome!</h1>
+          <h2>All Subjects</h2>
+        </span>
+      </div>
+
+      <div id="SubjectImagesParent">
+
+
+
+        <div id="SlideShowContainer">
+        <span class="SubjectClass" id="Math" style="visibility:visible;">
+          <a id=SlideShowReference href="math.html" target="_self">
+
+              <img id=SubjectSlideShowImage class="SubjectImages" src="images/1.jpg" alt="Math logo">
+          </a>
+          
+
+        </span>
+        <figcaption id=SubjectSlideShowCaption class="subjectcaptions">Mathematics</figcaption>
+      </div>
+        <!-- <span class="SubjectClass" id="bio">
+          <a href="bio.html" target="_self">
+            <figure>
+              <img class="SubjectImages" src="images/bio.jpg" alt="Biology logo">
+          </a>
+          <figcaption class="subjectcaptions">Biology</figcaption>
+          </figure>
+        </span>
+
+        <span class="SubjectClass" id="CS">
+          <a href="CS.html" target="_self">
+            <img class="SubjectImages" src="images/cs.jpg" alt="Computer Science logo">
+          </a>
+          <figcaption class="subjectcaptions">Computer Science</figcaption>
+          </figure>
+        </span>
+
+        <span class="SubjectClass" id="Cyber">
+          <a href="network.html" target="_self">
+            <figure>
+              <img class="SubjectImages" src="images/network.jpg" alt="Network logo">
+          </a>
+          </figure>
+          <figcaption class="subjectcaptions">Network & Cybersecurity</figcaption>
+        </span> -->
+<div id=ArrowContainer>
+        <button id=LeftArrow class="SlideshowArrows" onclick="prevSlide()">&#10094;</button>
+        <button id =RightArrow class="SlideshowArrows" onclick="nextSlide()">&#10095;</button>
+      </div>
+
+      </div>
+
+    </main>
+
+    <!-- <aside style="text-align: right; padding: 0px; margin: 5px;">
+      <input class=darkmodebtn type="image" src="images/darkmode.png" onclick="toggleDarkMode()">
+    </aside>
+
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode-on");
+      }
+    </script> -->
+
+    <div class="MainFooterParent">
+      <footer id=mainfooter>
+        <ul>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="mailto:ihackprojectsmm@gmail.com">Contact Us</a></li>
+        </ul>
+        <p id=FooterRights><em>AnswerIt!</em> All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

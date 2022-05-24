@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: 0.2s;
+  }
+
+.MainFooterParent{
+    margin-top: 30vh;
+}
+
+.maincontainer{
+    position: relative;
+    margin-top: 25%;
+    text-align: center;
+    padding-top: 5px;
+}
+p{
+    padding: 5px;
+}
+h1{
+    font-size: 50px;
+}
+
+.unorderedlist{
+    font-size: 20px;
+}
+
+.unorderedlist li{
+    font-size: larger;
+    color: #c25725;
+}
+

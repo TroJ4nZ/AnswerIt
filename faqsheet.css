@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: 0.2s;
+  }
+
+.maincontainer{
+    position: relative;
+
+    margin: 5px;
+}
+.welcomemsg{
+    text-align: center;
+}
+p{
+    margin: 5px;
+}
+h1{
+    font-size: 50px;
+}
+
+
+
+.unorderedlist{
+    display: list-item;
+    margin-left: 25px;
+    font-size: 35px;
+    list-style-type: disc;
+}
+.unorderedlist p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.innerLI{
+    margin-left: 50px;
+    font-size: 20px;
+    list-style-type: square;
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: 0.2s;
+  }
+
+ 
+
+.SubmitResetBtns {
+  text-align: center;
+}
+@media (max-width: 768px){
+    .SubmitResetBtns{
+        position: relative;
+    }
+    .SigningButton{
+        position: absolute;
+        margin: 15px;
+    }
+    .submit{
+        top: 0;
+        left: 75px;
+    }
+    .reset{
+        top: 0;
+        left: 200px;
+    }
+}
+li {
+    margin-top: 10px;
+    list-style: none;
+  }
+
+.maincontainer{
+    text-align: center;
+}
+
+
+.MainFormContainer p{
+    width: 500px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+
+.reginputs {
+
+  font-size: 16px;
+  height: 35px;
+  width: 500px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(11, 141, 11);
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+
+
+label {
+    font-size: 20px;
+    text-align: left;
+  }
+

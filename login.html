@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="indexsheet.css">
+  <link rel="stylesheet" href="headersheet.css">
+  <link rel="stylesheet" href="footersheet.css">
+  <link rel="stylesheet" href="loginsheet.css">
+  
+  <script src=darkmode.js></script>
+  <script src=validation.js></script>
+  <script>var isAdmin = false;
+  console.log(isAdmin);
+  </script>
+  <title>Login</title>
+  <style></style>
+</head>
+
+<body>
+  <header class="mainheader">
+    <div>
+      <a id=HomeBtnParent href="index.html">
+        <img id=homebtn src="images/home.png">
+      </a>
+      <a id=headerImgParent href=index.html>
+        <img id="headerimg" src="images/logo2.png" alt="Company Logo" />
+      </a>
+
+      <form id="RegisterLoginBtns">
+        <button class="SigningButton" type="button" onclick="window.location.href='register.html';">
+          Register
+        </button>
+      </form>
+  </header>
+  <main class="maincontainer">
+    <h1 class="welcomemsg">Login</h1>
+    <p></p>
+    <div class="MainFormContainer">
+      <form name=LoginForm method=POST onsubmit="return validateLogin()" novalidate>
+        <p>
+          <label for="userName">Username</label>
+          <input type="text" class="reginputs" id="userName" name="userName" maxlength="25" size="25"
+            placeholder="Enter your username..." />
+        </p>
+
+        <p>
+          <label for="password">Password</label>
+          <input type="password" class="reginputs" id="password" name="password" maxlength="25" size="25"
+            placeholder="Enter your password..." />
+        </p>
+
+
+
+        <p class="SubmitResetBtns">
+          <input class="SigningButton" type="submit" value="Login" >
+          <input class="SigningButton" type="reset" value="Reset" onclick="resetInputs()" method="GET">
+        </p>
+
+
+      </form>
+    </div>
+  </main>
+  <aside style="text-align: right; padding: 0px; margin: 0px;">
+    <input class=darkmodebtn type="image" src="images/darkmode.png" onclick="toggleDarkMode()">
+  </aside>
+
+
+  <div class="MainFooterParent">
+    <footer id=mainfooter>
+      <ul>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="mailto:a.m.mohamed31@student.aast.edu">Contact Us</a></li>
+      </ul>
+      <p id=FooterRights><em>AnswerIt!</em> All rights reserved.</p>
+
+    </footer>
+  </div>
+
+
+</body>
+
+</html>

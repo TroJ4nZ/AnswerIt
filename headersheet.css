@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: 0.2s;
+}
+
+.mainheader {
+    display: block;
+    position:relative;
+    background-color: #53535396;
+    padding: 25px;
+    text-align: center;
+    border: gray;
+  }
+  #headerImgParent{
+    position: relative;
+
+  }
+  #headerimg {
+    border-radius: 15px;
+    width: 32vw;
+    height: 12vw;
+    
+  }
+
+  #HomeBtnParent{
+    position: relative;
+    right: 25%;
+    text-decoration: none;
+  }
+  #homebtn {
+    
+    width: 3vw;
+    height: 3vw;
+  }
+
+
+ #RegisterLoginBtns {
+  position: absolute;
+    left: 70vw;
+    bottom: 5vh;
+} 
+
+
+ .SigningButton {
+  width: 125px;
+  height: 75px;
+  transition-duration: 0.3s;
+  text-align: center;
+  background-color: #fcb849;
+  font-size: 25px;
+  border: 7px solid #97db56;
+  border-radius: 45px;
+    margin: 5px;
+} 
+
+
+.SigningButton:hover{
+    background-color: white;
+}

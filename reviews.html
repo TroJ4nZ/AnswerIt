@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexsheet.css" />
+    <link rel="stylesheet" href="headersheet.css">
+    <link rel="stylesheet" href="footersheet.css">
+    <link rel="stylesheet" href="reviewssheet.css">
+    <link rel="stylesheet" href="sidenavsheet.css">
+
+    <script src="sidenav.js"></script>
+    <script src=darkmode.js></script>
+    <title>
+        Reviews
+    </title>
+
+
+</head>
+
+<body>
+
+    <div id="PageBodyContent">
+      <header class="mainheader">
+  
+        <span id=MenuIcon src="./images/menu.png" width="30px" onclick="openMenu();">&#9776;</span>
+        <div id="sideMenu">
+          <ul>
+            <li><a href="#" class="closeBtn" onclick="closeMenu();">&times;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <details id=SubjectsDropDownDetails>
+                <summary>Subjects</summary>
+                <p><a href="math.html">Math</a></p>
+                <p><a href="bio.html">Biology</a></p>
+                <p><a href="cs.html">Computer Science</a></p>
+                <p><a href="network.html">Network</a></p>
+              </details>
+  
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+          </ul>
+        </div>
+  
+  
+  
+  
+        <a id=HomeBtnParent href="index.html">
+          <img id=homebtn src="images/home.png">
+        </a>
+  
+  
+        <a id="headerImgParent" href=index.html>
+          <img id="headerimg" src="images/logo2.png" alt="Company Logo" />
+        </a>
+  
+  
+        <form id="RegisterLoginBtns">
+          <button class="SigningButton" type="button" onclick="window.location.href='register.html';">
+            Register
+          </button>
+          <button class="SigningButton" type="button" onclick="window.location.href='login.html';">
+            Login
+          </button>
+        </form>
+      </header>
+  
+  
+    <main class=maincontainer>
+        <h1 class="welcomemsg">Reviews</h1>
+        <p style="width:100vw;"></p>
+        <div id="rev">
+        </div>
+        <div class="peopleRev QA">
+            <img src="images/face1.jpg" alt="Avatar" style="width:90px">
+            <p><span><b>Mohamed Ahmed</b></span></p>
+            <p>
+                This is an amazing site it is very helpful it helped me a lot.
+            </p>
+
+        </div>
+        <div class="peopleRev QA">
+            <img src="images/face2.jpg" alt="Avatar" style="width:90px">
+            <p><span><b>Hana Mohamed</b></span></p>
+            <p>
+                I love it! It has answered a lot of my questions.
+            </p>
+        </div>
+        <div class="peopleRev QA">
+            <img src="images/gigachad.jpg" alt="Avatar" style="width:90px">
+            <p><span><b>Ernest Khalimov</b></span></p>
+            <p>
+                This site is very informatic and it looks very cool
+
+            </p>
+        </div>
+    </main>
+
+    <aside style="text-align: right; padding: 0px; margin: 0px;">
+        <input class=darkmodebtn type="image" src="images/darkmode.png" onclick="toggleDarkModeQA()">
+    </aside>
+
+
+
+
+    <div class="MainFooterParent">
+        <footer id=mainfooter>
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="mailto:a.m.mohamed31@student.aast.edu">Contact Us</a></li>
+            </ul>
+            <p id=FooterRights><em>AnswerIt!</em> All rights reserved.</p>
+
+        </footer>
+    </div>
+
+
+</html>
